@@ -1,0 +1,125 @@
+/* write your css here */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+   
+
+}
+.Container{
+    
+    background-image: radial-gradient(circle, #7c8d88, #828d86, #888e86, #8d8e88, #908f8b);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    background-image: radial-gradient(circle, #798454, #647f54, #507957, #3b735a, #256c5e);
+    color: azure;
+    text-shadow: #1e2930;
+    font-size: 3rem ;
+    border:5px dashed rgb(35, 35, 145);
+    border-radius: 20px;
+    padding:1vh 5vw ;
+    
+}
+.Cards{
+    display:flex;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    max-width:1300px; 
+    margin:0 auto;
+    
+}
+.card{
+    color: azure;
+    width:400px;
+    margin:1rem;
+    padding:1rem;
+    height:max-content;
+    border:2px solid #1e2930; 
+    background-image: radial-gradient(circle, #47383e, #453f4b, #404853, #3f5055, #465653);
+    
+    display:flex;
+    flex-direction:column;
+    border-radius: 10px ;
+    align-items: center;
+    box-shadow: gba(0,0,0,0.24) 0px 3px 8px;
+}
+.card:hover{
+    transform: scale(1.02);
+    transition: all;
+    transition-duration: 0.5s;
+}
+.image{
+    width:380px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.tour-info{
+    margin:20px 5px;
+}
+.tour-price{
+    font-size: 1.3rem;
+    color: #9b8563;
+}
+.tour-name{
+    font-size: 1.3rem;
+    color:#8b9296
+}
+.read-more{
+    padding-left: 0.8rem;
+    color: rgb(2, 32, 9);
+    cursor:pointer;
+}
+.read-more:hover{
+    color: rgb(29, 122, 97);
+    scale: 1.08rem;
+    transition: all;
+    transition-duration: 0.1s;
+}
+.red-btn{
+    background-color: #297f96;
+    width:14rem;
+    height:3.2rem;
+    border: 3px solid black;
+    border-radius: 0.8rem;
+    color:aliceblue;
+    font-size:medium;
+
+}
+.red-btn:hover{
+    transform: scale(1.02);
+    transition: all;
+    transition-duration: 0.5s;
+    background-color: rgb(134, 69, 69);
+}
+.refresh{
+    background-image: radial-gradient(circle, #7c8d88, #828d86, #888e86, #8d8e88, #908f8b);
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8rem;
+    cursor:pointer;
+}
+.white-btn{
+    text-shadow: #1e2930;
+    background-color: #638993;
+    width:14rem;
+    height:3.2rem;
+    border: 3px solid black;
+    border-radius: 0.8rem;
+    color:aliceblue;
+    font-size:medium;
+    cursor:pointer;
+    font:bold;
+}
