@@ -3,6 +3,10 @@ import data from './data.js'
 import Tours from './components/Tours.js'
 const App = () => {
   const[tours,setTours]=useState(data)
+  const removeTour=(id)=>{
+    const newTours=tours.filter((tour)=>tour.id!==id)
+    setTours(newTours)
+  }
   function removeTour(id){
       const newTours=tours.filter(tour => tour.id!==id);
       setTours(newTours);
